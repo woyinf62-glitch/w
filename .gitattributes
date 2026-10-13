@@ -1,0 +1,36 @@
+# 统一换行符，避免 Windows(CRLF) 与 Linux/macOS(LF) 之间的无意义 diff
+* text=auto eol=lf
+
+# 明确按文本处理的文件
+*.md      text
+*.txt     text
+*.json    text
+*.yml     text
+*.yaml    text
+*.js      text
+*.ts      text
+*.tsx     text
+*.jsx     text
+*.css     text
+*.html    text
+*.py      text
+*.ps1     text
+*.sh      text
+
+# 二进制文件，禁止任何换行符转换
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.gif     binary
+*.ico     binary
+*.webp    binary
+*.pdf     binary
+*.zip     binary
+*.7z      binary
+*.exe     binary
+*.dll     binary
+*.woff    binary
+*.woff2   binary
+
+# 让 GitHub 语言统计忽略生成物
+dist/*    linguist-generated=true
